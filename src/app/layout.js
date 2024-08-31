@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
         <script src="js/numinate.min.js"></script>
         {/* Slick JS */}
 
-        <script src="js/swiper.min.js"></script>
+        {/* <script src="js/swiper.min.js"></script> */}
         {/* Magnific JS */}
 
         <script src="js/jquery.magnific-popup.min.js"></script>
