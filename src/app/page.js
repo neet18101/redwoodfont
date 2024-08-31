@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import {
   Navigation,
   Pagination,
@@ -9,8 +10,10 @@ import {
   Autoplay,
   EffectFade,
 } from "swiper/modules";
+import dynamic from "next/dynamic";
 
-export default function Home() {
+
+function Home() {
   return (
     <>
       <div className="page-wrapper">
@@ -2708,3 +2711,6 @@ export default function Home() {
     </>
   );
 }
+
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false })
