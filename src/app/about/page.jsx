@@ -71,7 +71,7 @@ function page() {
                             </div>
                             <div className="col-md-12 col-xl-4">
                                 <div className="pbmit-animation-style7 single-img">
-                                    <img src="images/homepage-3/single-img.png" alt="" />
+                                    <img src="https://xinterio-demo.pbminfotech.com/html-demo/images/homepage-3/single-img.png" alt="" />
                                 </div>
                             </div>
                             <div className="col-md-12 col-xl-4">
@@ -289,7 +289,7 @@ function page() {
                             <div className="col-md-12 col-xl-6">
                                 <div className="twentytwenty-container">
                                     {/* <img src="images/homepage-3/after.png" alt="Before" /> */}
-                                    <img src="images/homepage-3/before.png" alt="After" />
+                                    <img src="https://xinterio-demo.pbminfotech.com/html-demo/images/homepage-3/before.png" alt="After" />
                                 </div>
                                 
 
