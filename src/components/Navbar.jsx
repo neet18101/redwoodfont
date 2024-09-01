@@ -123,7 +123,7 @@ function Navbar() {
                                                     </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="/about">About</a>
+                                                    <Link href="/about">About</Link>
 
                                                 </li>
                                                 <li className="dropdown">
