@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import ProjectSlider from '@/components/ProjectSlider'
 import React from 'react'
 
 
@@ -196,7 +197,7 @@ function page() {
                                         <div className="col-md-6">
                                             <div className="pbminfotech-ele-fid-style-1">
                                                 <div className="pbmit-fld-contents d-flex  align-items-center" style={{
-                                                    gap:"40px"
+                                                    gap: "40px"
                                                 }}>
                                                     <div
                                                         className="pbmit-circle-outer"
@@ -291,7 +292,7 @@ function page() {
                                     {/* <img src="images/homepage-3/after.png" alt="Before" /> */}
                                     <img src="https://xinterio-demo.pbminfotech.com/html-demo/images/homepage-3/before.png" alt="After" />
                                 </div>
-                                
+
 
                             </div>
                         </div>
@@ -390,7 +391,16 @@ function page() {
                         </div>
                     </div>
                 </section>
-             
+                <section className="section-md">
+                    <div className="container">
+                        <div className="pbmit-heading-subheading text-center animation-style3">
+                            <h4 className="pbmit-subtitle">since 1986</h4>
+                            <h2 className="pbmit-title">Our Projects</h2>
+                        </div>
+                        <ProjectSlider />
+                    </div>
+                </section>
+
             </div>
             {/* Page Content End */}
         </>
