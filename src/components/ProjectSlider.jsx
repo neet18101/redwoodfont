@@ -81,34 +81,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                <div className="pbmit-content-wrapper">
-                                    <div className="pbmit-date-wraper d-flex align-items-center">
-                                        <div className="pbmit-meta-date-wrapper pbmit-meta-line">
-                                            <div className="pbmit-meta-date">
-                                                <span className="pbmit-post-date">
-                                                    <i className="pbmit-base-icon-calendar-3" />
-                                                    May 5, 2024
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-meta-author pbmit-meta-line">
-                                            <span className="pbmit-post-author">
-                                                <i className="pbmit-base-icon-user-3" />
-                                                <span>By</span>admin
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <h3 className="pbmit-post-title">
-                                        <a href="blog-single-details.html">
-                                            How To Choose The Right Furniture Of Your Home
-                                        </a>
-                                    </h3>
-                                    <div className="pbminfotech-box-desc">
-                                        Modest, recently established interior design company
-                                        that seeks to address a variety of topics,
-                                        including…
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </article>
@@ -144,34 +117,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                <div className="pbmit-content-wrapper">
-                                    <div className="pbmit-date-wraper d-flex align-items-center">
-                                        <div className="pbmit-meta-date-wrapper pbmit-meta-line">
-                                            <div className="pbmit-meta-date">
-                                                <span className="pbmit-post-date">
-                                                    <i className="pbmit-base-icon-calendar-3" />
-                                                    May 5, 2024
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-meta-author pbmit-meta-line">
-                                            <span className="pbmit-post-author">
-                                                <i className="pbmit-base-icon-user-3" />
-                                                <span>By</span>admin
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <h3 className="pbmit-post-title">
-                                        <a href="blog-single-details.html">
-                                            Frequently Utilized Metal Welding System
-                                        </a>
-                                    </h3>
-                                    <div className="pbminfotech-box-desc">
-                                        Modest, recently established interior design company
-                                        that seeks to address a variety of topics,
-                                        including…
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </article>
@@ -207,34 +153,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                <div className="pbmit-content-wrapper">
-                                    <div className="pbmit-date-wraper d-flex align-items-center">
-                                        <div className="pbmit-meta-date-wrapper pbmit-meta-line">
-                                            <div className="pbmit-meta-date">
-                                                <span className="pbmit-post-date">
-                                                    <i className="pbmit-base-icon-calendar-3" />
-                                                    May 5, 2024
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-meta-author pbmit-meta-line">
-                                            <span className="pbmit-post-author">
-                                                <i className="pbmit-base-icon-user-3" />
-                                                <span>By</span>admin
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <h3 className="pbmit-post-title">
-                                        <a href="blog-single-details.html">
-                                            How Does One Go About Buying Furniture?
-                                        </a>
-                                    </h3>
-                                    <div className="pbminfotech-box-desc">
-                                        Modest, recently established interior design company
-                                        that seeks to address a variety of topics,
-                                        including…
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </article>
@@ -269,34 +188,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                <div className="pbmit-content-wrapper">
-                                    <div className="pbmit-date-wraper d-flex align-items-center">
-                                        <div className="pbmit-meta-date-wrapper pbmit-meta-line">
-                                            <div className="pbmit-meta-date">
-                                                <span className="pbmit-post-date">
-                                                    <i className="pbmit-base-icon-calendar-3" />
-                                                    May 5, 2024
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-meta-author pbmit-meta-line">
-                                            <span className="pbmit-post-author">
-                                                <i className="pbmit-base-icon-user-3" />
-                                                <span>By</span>admin
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <h3 className="pbmit-post-title">
-                                        <a href="blog-single-details.html">
-                                            Four Ways for Creating Extra Space in Small Homes
-                                        </a>
-                                    </h3>
-                                    <div className="pbminfotech-box-desc">
-                                        Modest, recently established interior design company
-                                        that seeks to address a variety of topics,
-                                        including…
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </article>
