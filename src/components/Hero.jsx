@@ -69,11 +69,11 @@ function Hero() {
                                         <div className="row text-center">
                                             <div className="col-md-12">
                                                 <div className="pbmit-slider-content">
-                                                    <h5 className="pbmit-sub-title transform-top transform-delay-1">
+                                                    {/* <h5 className="pbmit-sub-title transform-top transform-delay-1">
                                                         barcelona,spain
-                                                    </h5>
+                                                    </h5> */}
                                                     <h2 className="pbmit-title transform-scale transform-delay-2">
-                                                        Clamp Guard 52 <br /> Luxurious Apartments
+                                                        We design your Customer <br /> Experience
                                                     </h2>
                                                     <div className="pbmit-button transform-scale transform-delay-3">
                                                         <a
@@ -82,7 +82,7 @@ function Hero() {
                                                         >
                                                             <span className="pbmit-button-content-wrapper">
                                                                 <span className="pbmit-button-text">
-                                                                    Appeal To
+                                                                    Contact us
                                                                 </span>
                                                             </span>
                                                         </a>
@@ -106,9 +106,9 @@ function Hero() {
                                         <div className="row text-center">
                                             <div className="col-md-12">
                                                 <div className="pbmit-slider-content">
-                                                    <h5 className="pbmit-sub-title transform-top transform-delay-1">
+                                                    {/* <h5 className="pbmit-sub-title transform-top transform-delay-1">
                                                         Xinterio features
-                                                    </h5>
+                                                    </h5> */}
                                                     <h2 className="pbmit-title transform-scale transform-delay-2">
                                                         Design Spaces To <br /> Make Wonderful Living
                                                     </h2>

@@ -2468,7 +2468,7 @@ body {
 		transform: scale(1.5) translate(0, -100px);
 	}
 	.pbmit-animation-style7 img {
-		transform:  scale(0.5);
+		/* transform:  scale(0.5); */
 		transition: 0.9s;
 	}
 	.pbmit-animation-style7.active img {
