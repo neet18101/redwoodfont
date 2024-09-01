@@ -71,7 +71,7 @@ useEffect(() => {
                                 className="pbmit-slider-bg"
                                 style={{
                                     backgroundImage:
-                                        "url(images/banner-slider-img/demo1-slide-01.jpg)",
+                                        "url(https://redwoodshopfront.co.uk/wp-content/uploads/al_opt_content/IMAGE/redwoodshopfront.co.uk//wp-content/uploads/2023/10/Canopies__Awnings.jpg.bv_resized_desktop.jpg.bv.webp?bv_host=redwoodshopfront.co.uk)",
                                 }}
                             />
                             <div className="container">
