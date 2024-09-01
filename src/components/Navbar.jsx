@@ -199,11 +199,7 @@ function Navbar() {
                                 </nav>
                             </div>
                             <div className="pbmit-right-box d-flex align-items-center">
-                                <div className="pbmit-header-search-btn">
-                                    <a href="#" title="Search">
-                                        <i className="pbmit-base-icon-search-1" />
-                                    </a>
-                                </div>
+                                
                                 <div className="pbmit-button-box-second">
                                     <a className="pbmit-btn" href="contact-us.html">
                                         <span className="pbmit-button-content-wrapper">

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import {
   Navigation,
@@ -18,6 +18,7 @@ import Counter from "@/components/Counter";
 import Home_Service from "@/components/Home_Service";
 import WhyChoose from "@/components/WhyChoose";
 
+
 function Home() {
   return (
     <>
@@ -33,7 +34,7 @@ function Home() {
           <HomeAbout />
           <Counter />
           <Home_Service />
-          <WhyChoose />
+          <WhyChoose/>
           {/* Marquee Start */}
           <section className="marquee-one">
             <div className="container-fluid p-0">
@@ -81,6 +82,471 @@ function Home() {
             </div>
           </section>
           {/* Marquee End */}
+          {/* Portfolio Start */}
+          {/* <section className="pbmit-bg-color-light portfolio-one pbmit-sortable-yes">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-12 col-xl-4">
+                  <div className="pbmit-heading-subheading animation-style2">
+                    <h4 className="pbmit-subtitle">Process</h4>
+                    <h2 className="pbmit-title">Our Latest Project</h2>
+                  </div>
+                </div>
+                <div className="col-md-12 col-xl-8">
+                  <div className="pbmit-sortable-list">
+                    <ul className="pbmit-sortable-list-ul">
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link pbmit-selected"
+                          data-category="*"
+                          data-sortby="*"
+                        >
+                          All
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link"
+                          data-sortby="architecture"
+                        >
+                          Architecture
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link"
+                          data-sortby="bedroom"
+                        >
+                          Bedroom
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link"
+                          data-sortby="furniture"
+                        >
+                          Furniture
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link"
+                          data-sortby="interior"
+                        >
+                          Interior
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="pbmit-sortable-link"
+                          data-sortby="kitchen"
+                        >
+                          Kitchen
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="row pbmit-element-posts-wrapper">
+                <article className="pbmit-portfolio-style-3 col-md-4 bedroom">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-01.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Bedroom
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">Innovation</a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+                <article className="pbmit-portfolio-style-3 col-md-4 furniture">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-02.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Furniture
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">Minimalism</a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+                <article className="pbmit-portfolio-style-3 col-md-4 interior">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-03.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Interior
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">Lighting</a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+                <article className="pbmit-portfolio-style-3 col-md-4 kitchen">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-04.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Kitchen
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">Bold Tiles</a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+                <article className="pbmit-portfolio-style-3 col-md-4 bedroom">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-05.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Bedroom
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">
+                            Clean lines
+                          </a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+                <article className="pbmit-portfolio-style-3 col-md-4 architecture">
+                  <div className="pbminfotech-post-content">
+                    <div className="pbmit-featured-img-wrapper">
+                      <div className="pbmit-featured-wrapper">
+                        <img
+                          src="images/homepage-1/portfolio/portfolio-06.jpg"
+                          className="img-fluid"
+                          alt="portfolio-01"
+                        />
+                      </div>
+                    </div>
+                    <div className="pbminfotech-box-content">
+                      <div className="pbminfotech-titlebox">
+                        <div className="pbmit-port-cat">
+                          <a href="portfolio-grid-col-3.html" rel="tag">
+                            Architecture
+                          </a>
+                        </div>
+                        <h3 className="pbmit-portfolio-title">
+                          <a href="portfolio-detail-style-1.html">Integral</a>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="pbmit-portfolio-btn">
+                      <a href="portfolio-detail-style-1.html">
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </a>
+                    </div>
+                    <a
+                      className="pbmit-link"
+                      href="portfolio-detail-style-1.html"
+                    />
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section> */}
+          {/* Portfolio End */}
+          {/* Pricing Start */}
+          {/* <section className="section-xl pricing-one-bg">
+            <div className="container">
+              <div className="row g-0">
+                <div className="col-md-12 col-xl-7">
+                  <div className="pbminfotech-ele-ptable-style-1">
+                    <div className="pbmit-ptable-cols row">
+                      <div className="pbmit-ptable-col col-md-6">
+                        <div className="pbmit-pricing-table-box">
+                          <div className="pbmit-head-wrap">
+                            <h3 className="pbminfotech-ptable-heading">
+                              Basic Plan
+                            </h3>
+                            <div className="pbminfotech-sep" />
+                            <div className="pbmit-price-wrapper">
+                              <div className="pbmit-ptable-price-w">
+                                <div className="pbminfotech-ptable-symbol">
+                                  $
+                                </div>
+                                <div className="pbminfotech-ptable-price">
+                                  27
+                                </div>
+                              </div>
+                              <div className="pbminfotech-ptable-frequency">
+                                /Mo
+                              </div>
+                            </div>
+                          </div>
+                          <div className="pbmit-ptable-inner">
+                            <div className="pbmit-ptable-lines-w">
+                              <div className="pbmit-ptable-line">
+                                Individuals &amp; small projects
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Access to design features
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Limited library of decorative items
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Email support
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Monthly updates
+                              </div>
+                            </div>
+                            <div className="pbminfotech-ptable-btn">
+                              <div className="pbmit-button">
+                                <a
+                                  className="pbmit-button-inner"
+                                  href="about-mask-img.html"
+                                >
+                                  <span className="pbmit-button-wrapper">
+                                    <span className="pbmit-button-text">
+                                      Purchase Now
+                                    </span>
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="pbmit-feature-wrap" />
+                        </div>
+                      </div>
+                      <div className="pbmit-pricing-table-featured-col pbmit-ptable-col col-md-6">
+                        <div className="pbmit-pricing-table-box">
+                          <div className="pbmit-head-wrap">
+                            <h3 className="pbminfotech-ptable-heading">
+                              Advance
+                            </h3>
+                            <div className="pbminfotech-sep" />
+                            <div className="pbmit-price-wrapper">
+                              <div className="pbmit-ptable-price-w">
+                                <div className="pbminfotech-ptable-symbol">
+                                  $
+                                </div>
+                                <div className="pbminfotech-ptable-price">
+                                  47
+                                </div>
+                              </div>
+                              <div className="pbminfotech-ptable-frequency">
+                                /mo
+                              </div>
+                            </div>
+                          </div>
+                          <div className="pbmit-ptable-inner">
+                            <div className="pbmit-ptable-lines-w">
+                              <div className="pbmit-ptable-line">
+                                Individuals &amp; small projects
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Access to design features
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Limited library of decorative items
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Email support
+                              </div>
+                              <div className="pbmit-ptable-line">
+                                Monthly updates
+                              </div>
+                            </div>
+                            <div className="pbminfotech-ptable-btn">
+                              <div className="pbmit-button">
+                                <a
+                                  className="pbmit-button-inner"
+                                  href="about-mask-img.html"
+                                >
+                                  <span className="pbmit-button-wrapper">
+                                    <span className="pbmit-button-text">
+                                      Purchase Now
+                                    </span>
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="pbmit-feature-wrap">
+                            <div className="pbmit-ptablebox-featured-w" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-12 col-xl-5">
+                  <div className="pricing-one-rightbox">
+                    <div className="pbmit-heading-subheading animation-style2">
+                      <h4 className="pbmit-subtitle">Pricing Plan</h4>
+                      <h2 className="pbmit-title">
+                        Choose plan for house interior
+                      </h2>
+                    </div>
+                    <ul className="list-group list-group-borderless">
+                      <li className="list-group-item">
+                        <span className="pbmit-icon-list-icon">
+                          <i
+                            aria-hidden="true"
+                            className="pbmit-xinterio-icon pbmit-xinterio-icon-check-mark"
+                          />
+                        </span>
+                        <span className="pbmit-icon-list-text">
+                          Get 30 day free trial
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        <span className="pbmit-icon-list-icon">
+                          <i
+                            aria-hidden="true"
+                            className="pbmit-xinterio-icon pbmit-xinterio-icon-wallet"
+                          />
+                        </span>
+                        <span className="pbmit-icon-list-text">
+                          No any hidden fees pay
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        <span className="pbmit-icon-list-icon">
+                          <i
+                            aria-hidden="true"
+                            className="pbmit-xinterio-icon pbmit-xinterio-icon-clock"
+                          />
+                        </span>
+                        <span className="pbmit-icon-list-text">
+                          You can cancel anytime
+                        </span>
+                      </li>
+                    </ul>
+                    <a
+                      className="pbmit-btn pbmit-btn-outline"
+                      href="our-history.html"
+                    >
+                      <span className="pbmit-button-content-wrapper">
+                        <span className="pbmit-button-text">More Price</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> */}
           {/* Pricing End */}
           {/* Testimonial Start */}
           <section className="pbmit-bg-color-light testimonial-one">
@@ -572,7 +1038,7 @@ function Home() {
                 <div className="col-md-6">
                   <div className="pbmit-heading-subheading animation-style4">
                     <h4 className="pbmit-subtitle">What we do</h4>
-                    <h2 className="pbmit-title">Latest Blog &amp;</h2>
+                    <h2 className="pbmit-title">Latest posts &amp; articles</h2>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -785,9 +1251,12 @@ function Home() {
           {/* Blog End */}
         </div>
         {/* Page Content End */}
+
       </div>
     </>
   );
 }
 
-export default Home;
+
+export default dynamic(() => Promise.resolve(Home), { ssr: false })
+// export default Home

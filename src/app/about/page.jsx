@@ -1,8 +1,16 @@
+import Navbar from '@/components/Navbar'
 import React from 'react'
+
 
 function page() {
     return (
         <>
+            {/* Header Main Area */}
+            <header className="site-header header-style-1">
+                <Navbar />
+            </header>
+            {/* Header Main Area End Here */}
+
             {/* Title Bar */}
             <div className="pbmit-title-bar-wrapper">
                 <div className="container">
@@ -17,7 +25,7 @@ function page() {
                                 <div className="pbmit-breadcrumb-inner">
                                     <span>
                                         <a title="" href="#" className="home">
-                                            <span>Xinterio</span>
+                                            <span>Red Wood Shop Front</span>
                                         </a>
                                     </span>
                                     <span className="sep">
@@ -45,18 +53,20 @@ function page() {
                             <div className="col-md-12 col-xl-4">
                                 <div className="about-us-three-content">
                                     <div className="pbmit-heading-subheading animation-style2">
-                                        <h2 className="pbmit-title">Hello! I`m Brantlee stvens</h2>
+                                        <h2 className="pbmit-title">We Do What We Know</h2>
                                         <div className="pbmit-heading-desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                            ut enim ad minim veniam quis nostrud exercitation ullamco
-                                            laboris nisi ut aliquip ex ea commodo consequat.
+                                            RedWood ShopFront is a leading spanplier of the installation of Shopfronts for leading retail clients. Since inception the company has further expanded its capabilities and is now one of the UK’s leading installers of commercial retail shopfronts and thrive to provide highest specification to our client’s requirements.
+                                        </div>
+                                        <div className="pbmit-heading-desc">
+                                            Moreover, we make these modules using optimum quality raw material to confirm their high functionality and durability.
                                         </div>
                                     </div>
                                     <div className="pbmit-animation-style1">
-                                        <img src="images/homepage-3/sign2.png" alt="" />
+                                        <img src="images/homepage-3/sign2.png" style={{
+
+                                        }} alt="" />
                                     </div>
-                                    <div className="pbmit-text-editor">@ Founder</div>
+
                                 </div>
                             </div>
                             <div className="col-md-12 col-xl-4">
@@ -74,7 +84,7 @@ function page() {
                                                         <i className="pbmit-xinterio-icon pbmit-xinterio-icon-offer" />
                                                     </div>
                                                     <span className="pbmit-fid-title">
-                                                        Happy Client Review
+                                                        Projects Completed
                                                     </span>
                                                 </div>
                                                 <h4 className="pbmit-fid-inner">
@@ -90,10 +100,10 @@ function page() {
                                                         data-after=""
                                                         data-after-style=""
                                                     >
-                                                        235
+                                                        352
                                                     </span>
                                                     <span className="pbmit-fid">
-                                                        <sup>+</sup>
+                                                        <span> +</span>
                                                     </span>
                                                 </h4>
                                             </div>
@@ -106,7 +116,7 @@ function page() {
                                                     <div className="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
                                                         <i className="pbmit-xinterio-icon pbmit-xinterio-icon-engineer" />
                                                     </div>
-                                                    <span className="pbmit-fid-title">Work Departments</span>
+                                                    <span className="pbmit-fid-title">Happy Customers</span>
                                                 </div>
                                                 <h4 className="pbmit-fid-inner">
                                                     <span className="pbmit-fid-before" />
@@ -121,10 +131,10 @@ function page() {
                                                         data-after=""
                                                         data-after-style=""
                                                     >
-                                                        420
+                                                        120
                                                     </span>
                                                     <span className="pbmit-fid">
-                                                        <sup>+</sup>
+                                                        <span> +</span>
                                                     </span>
                                                 </h4>
                                             </div>
@@ -137,7 +147,7 @@ function page() {
                                                     <div className="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
                                                         <i className="pbmit-xinterio-icon pbmit-xinterio-icon-client" />
                                                     </div>
-                                                    <span className="pbmit-fid-title">Our Happy Client</span>
+                                                    <span className="pbmit-fid-title">Years In Service</span>
                                                 </div>
                                                 <h4 className="pbmit-fid-inner">
                                                     <span className="pbmit-fid-before" />
@@ -152,10 +162,10 @@ function page() {
                                                         data-after=""
                                                         data-after-style=""
                                                     >
-                                                        30
+                                                        15
                                                     </span>
                                                     <span className="pbmit-fid">
-                                                        <span>K</span>
+                                                        <span> +</span>
                                                     </span>
                                                 </h4>
                                             </div>
@@ -174,20 +184,20 @@ function page() {
                             <div className="col-md-12 col-xl-6">
                                 <div className="before-after-left-area pbmit-bg-color-blackish">
                                     <div className="pbmit-heading-subheading animation-style4">
-                                        <h4 className="pbmit-subtitle">since 1986</h4>
+                                        <h4 className="pbmit-subtitle">12 + Awards Received</h4>
                                         <h2 className="pbmit-title">
-                                            We design thoughtful, livable spaces.
+                                            We design your Customer Experience
                                         </h2>
                                         <div className="pbmit-heading-desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                            RedWood ShopFront is now of the UK's leading installers of commercial retail shopfronts and thrive to provide highest specification to our client's requirements.
                                         </div>
                                     </div>
-                                    <div className="row pbmit-fid-style-one">
+                                    <div className="row px-5 pbmit-fid-style-one">
                                         <div className="col-md-6">
                                             <div className="pbminfotech-ele-fid-style-1">
-                                                <div className="pbmit-fld-contents d-flex align-items-center">
+                                                <div className="pbmit-fld-contents d-flex  align-items-center" style={{
+                                                    gap:"40px"
+                                                }}>
                                                     <div
                                                         className="pbmit-circle-outer"
                                                         data-digit={87}
@@ -230,7 +240,9 @@ function page() {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="pbminfotech-ele-fid-style-1">
-                                                <div className="pbmit-fld-contents d-flex align-items-center">
+                                                <div className="pbmit-fld-contents d-flex align-items-center" style={{
+                                                    gap: "40px"
+                                                }}>
                                                     <div
                                                         className="pbmit-circle-outer"
                                                         data-digit={89}
@@ -276,116 +288,24 @@ function page() {
                             </div>
                             <div className="col-md-12 col-xl-6">
                                 <div className="twentytwenty-container">
-                                    <img src="images/homepage-3/after.png" alt="Before" />
+                                    {/* <img src="images/homepage-3/after.png" alt="Before" /> */}
                                     <img src="images/homepage-3/before.png" alt="After" />
                                 </div>
+                                
+
                             </div>
                         </div>
                     </div>
                 </section>
                 {/* Before After End */}
-                {/* Ihbox Start */}
-                <section className="ihbox-section-three section-lgt">
-                    <div className="container">
-                        <div className="heading-area">
-                            <div className="pbmit-heading">
-                                <h2>
-                                    <span className="pbmit-award">Award &amp; achievement</span>
-                                </h2>
-                            </div>
-                        </div>
-                        <div className="row g-0 pt-3">
-                            <div className="pbmit-col-20">
-                                <div className="pbmit-ihbox-style-10">
-                                    <div className="pbmit-ihbox-headingicon">
-                                        <div className="pbmit-ihbox-icon">
-                                            <div className="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                                <img src="images/homepage-3/ihbox/ih-award01.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-ihbox-contents">
-                                            <h2 className="pbmit-element-title">
-                                                Top 5 Interior Design Inspiration 2023
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pbmit-col-20">
-                                <div className="pbmit-ihbox-style-10">
-                                    <div className="pbmit-ihbox-headingicon">
-                                        <div className="pbmit-ihbox-icon">
-                                            <div className="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                                <img src="images/homepage-3/ihbox/ih-award02.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-ihbox-contents">
-                                            <h2 className="pbmit-element-title">
-                                                Top 5 Interior Design Inspiration 2023
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pbmit-col-20">
-                                <div className="pbmit-ihbox-style-10">
-                                    <div className="pbmit-ihbox-headingicon">
-                                        <div className="pbmit-ihbox-icon">
-                                            <div className="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                                <img src="images/homepage-3/ihbox/ih-award03.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-ihbox-contents">
-                                            <h2 className="pbmit-element-title">
-                                                Top 5 Interior Design Inspiration 2023
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pbmit-col-20">
-                                <div className="pbmit-ihbox-style-10">
-                                    <div className="pbmit-ihbox-headingicon">
-                                        <div className="pbmit-ihbox-icon">
-                                            <div className="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                                <img src="images/homepage-3/ihbox/ih-award04.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-ihbox-contents">
-                                            <h2 className="pbmit-element-title">
-                                                Top 5 Interior Design Inspiration 2023
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pbmit-col-20">
-                                <div className="pbmit-ihbox-style-10">
-                                    <div className="pbmit-ihbox-headingicon">
-                                        <div className="pbmit-ihbox-icon">
-                                            <div className="pbmit-ihbox-icon-wrapper pbmit-ihbox-icon-type-image">
-                                                <img src="images/homepage-3/ihbox/ih-award05.png" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="pbmit-ihbox-contents">
-                                            <h2 className="pbmit-element-title">
-                                                Top 5 Interior Design Inspiration 2023
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* Ihbox End */}
+
                 {/* Process Start */}
                 <section className="process-section-two">
                     <div className="container">
                         <div className="position-relative text-center">
                             <div className="pbmit-heading-subheading animation-style3">
                                 <h4 className="pbmit-subtitle">Steps</h4>
-                                <h2 className="pbmit-title">How organization works</h2>
+                                <h2 className="pbmit-title">Our Values</h2>
                             </div>
                             <div className="pbmit-ih-highlight">
                                 <h2>Process</h2>
@@ -402,7 +322,7 @@ function page() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h2 className="pbmit-element-title">Meet Designer</h2>
+                                        <h2 className="pbmit-element-title">Safety First ! </h2>
                                         <div className="pbmit-heading-desc">
                                             Lorem ipsum is simply text of the printing typesetting.
                                         </div>
@@ -419,9 +339,9 @@ function page() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h2 className="pbmit-element-title">Finalized layout</h2>
+                                        <h2 className="pbmit-element-title">Quality and Excellence</h2>
                                         <div className="pbmit-heading-desc">
-                                            Lorem ipsum is simply text of the printing typesetting.
+                                            Set and achieve high standards in everything we do.
                                         </div>
                                     </div>
                                 </div>
@@ -436,9 +356,9 @@ function page() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h2 className="pbmit-element-title">Work in progress</h2>
+                                        <h2 className="pbmit-element-title">Integrity</h2>
                                         <div className="pbmit-heading-desc">
-                                            Lorem ipsum is simply text of the printing typesetting.
+                                            Do the right thing.
                                         </div>
                                     </div>
                                 </div>
@@ -453,9 +373,9 @@ function page() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h2 className="pbmit-element-title">Smooth delivery</h2>
+                                        <h2 className="pbmit-element-title">Fulfillment </h2>
                                         <div className="pbmit-heading-desc">
-                                            Lorem ipsum is simply text of the printing typesetting.
+                                            Develop our talents and enjoy our work.
                                         </div>
                                     </div>
                                 </div>
