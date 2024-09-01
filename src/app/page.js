@@ -2063,5 +2063,4 @@ function Home() {
   );
 }
 
-
-export default dynamic(() => Promise.resolve(Home), { ssr: false })
+export default Home;
