@@ -13,10 +13,10 @@ function Navbar() {
                             <div className="pbmit-logo-button-area d-flex justify-content-between align-items-center">
                                 <div className="site-branding">
                                     <h1 className="site-title">
-                                        <a href="#">
+                                        <Link href="/">
 
                                             <h6 className='underline'>Red Wood Shop</h6>
-                                        </a>
+                                        </Link>
                                     </h1>
                                     <div className="pbmit-sticky-corner  pbmit-top-right-corner">
                                         <svg
