@@ -2128,3 +2128,8 @@ textarea.form-control{
 .form-control:focus::placeholder{
 	opacity: 1;
 }
+
+
+.footer-contact ul li{
+    text-align: center;
+}

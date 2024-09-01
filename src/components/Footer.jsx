@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Footer() {
@@ -7,37 +8,33 @@ function Footer() {
             <footer className="site-footer footer-style-1 pbmit-bg-color-secondary">
                 <div className="footer-wrap pbmit-footer-widget-area">
                     <div className="container">
+                        
                         <div className="row">
                             <div className="col-md-4">
-                                <aside className="widget pbmit-two-column-menu">
+                                <div className='text-center'>
+                                    <h6 style={{
+                                        color: "white "
+                                    }}>Our Company</h6>
+                                </div>
+                                <aside className="widget footer-contact">
                                     <ul>
                                         <li>
                                             <a href="about-us.html">About Us</a>
                                         </li>
+                                        
                                         <li>
                                             <a href="faq.html">FAQ</a>
                                         </li>
                                         <li>
-                                            <a href="our-team.html">Our Team</a>
+                                            <a href="our-team.html">Blog</a>
                                         </li>
                                         <li>
-                                            <a href="our-history.html">Our History</a>
+                                            <a href="our-history.html">Gallery</a>
                                         </li>
                                         <li>
                                             <a href="contact-us.html">Contact Us</a>
                                         </li>
-                                        <li>
-                                            <a href="blog-grid-col-4.html">Blog</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-details.html">Service</a>
-                                        </li>
-                                        <li>
-                                            <a href="team-single-details.html">Team Member</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-detail-style-1.html">Project</a>
-                                        </li>
+                                        
                                     </ul>
                                 </aside>
                             </div>
@@ -45,38 +42,47 @@ function Footer() {
                                 <aside className="widget">
                                     <div className="textwidget">
                                         <div className="pbmit-footer-logo">
-                                            <img src="images/favicon.svg" alt />
+                                            {/* <img src="images/favicon.svg" alt /> */}
+                                            <h1 className="site-title justify-content-center">
+                                                <Link href="/">
+
+                                                    <h4 style={{
+                                                        color: "white",
+                                                        textAlign:"center"
+                                                    }}>Red Wood Shop</h4>
+                                                </Link>
+                                            </h1>
                                         </div>
+                                        <p className='text-center'>RedWood ShopFront is now one of the UK’s leading installers of commercial retail shopfronts and thrive to provide highest specification to our client’s requirements.</p>
+
                                     </div>
                                 </aside>
                             </div>
                             <div className="col-md-4">
-                                <aside className="widget pbmit-two-column-menu">
+                                <div className='text-center'>
+                                    <h6 style={{
+                                        color: "white "
+                                    }}>Contact Info</h6>
+                                </div>
+                                <aside className="widget footer-contact">
+
                                     <ul>
                                         <li>
-                                            <a href="#">Style Guide</a>
+                                            <a href="faq.html">Shop Fronts</a>
                                         </li>
                                         <li>
-                                            <a href="#">Instructions</a>
+                                            <a href="faq.html">Shutters</a>
                                         </li>
                                         <li>
-                                            <a href="#">Licenses</a>
+                                            <a href="faq.html">Windows</a>
                                         </li>
                                         <li>
-                                            <a href="#">Changelog</a>
+                                            <a href="faq.html">Reviews</a>
                                         </li>
                                         <li>
-                                            <a href="#">Error 404</a>
+                                            <a href="faq.html">Book Consult</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Password</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Protected</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Coming Soon</a>
-                                        </li>
+                                        
                                     </ul>
                                 </aside>
                             </div>

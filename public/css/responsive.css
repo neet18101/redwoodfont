@@ -1666,7 +1666,7 @@ body {
 	}
 	/*=== Footer ===*/ 
 	.site-footer .widget{
-		padding-top: 40px;
+		/* padding-top: 40px; */
 	}
 	.pbmit-footer-big-area{
 		padding-bottom: 35px;

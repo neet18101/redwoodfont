@@ -2445,7 +2445,7 @@ body {
 	padding-top: 40px;
 }
 .site-footer .widget {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     position: relative;
 }
 .site-footer .pbmit-two-column-menu.widget ul {
@@ -2453,6 +2453,7 @@ body {
     flex-wrap: wrap;
 }
 .site-footer .pbmit-two-column-menu.widget ul>li {
+	text-align: center;
     width: 50%;
 }
 .site-footer .widget ul>li {
