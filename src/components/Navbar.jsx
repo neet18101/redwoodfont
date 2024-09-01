@@ -93,8 +93,8 @@ function Navbar() {
 
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Our Products</a>
-                                                    <ul>
+                                                    <a href="#">Shop Fronts</a>
+                                                    {/* <ul>
                                                         <li>
                                                             <a href="about-us.html">Shop Fronts</a>
                                                         </li>
@@ -105,28 +105,28 @@ function Navbar() {
                                                             <a href="our-team.html">Windows</a>
                                                         </li>
 
-                                                    </ul>
+                                                    </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">About Us</a>
+                                                    <a href="#">Shutters</a>
+
+                                                </li>
+                                                <li className="dropdown">
+                                                    <a href="#">Windows</a>
+
+                                                </li>
+                                                <li className="dropdown">
+                                                    <a href="#">About</a>
 
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">Gallery</a>
 
                                                 </li>
+
                                                 <li className="dropdown">
                                                     <a href="#">Blog</a>
-
-                                                </li>
-                                                <li className="dropdown">
-                                                    <a href="#">Contact</a>
-
-                                                </li>
-
-                                                <li className="dropdown">
-                                                    <a href="#">Blogs</a>
-                                                    <ul>
+                                                    {/* <ul>
                                                         <li className="dropdown">
                                                             <a href="#">Blog Masonry View</a>
                                                             <ul>
@@ -185,10 +185,13 @@ function Navbar() {
                                                                 Blog Single Details
                                                             </a>
                                                         </li>
-                                                    </ul>
+                                                    </ul> */}
                                                 </li>
                                                 <li>
-                                                    <a href="contact-us.html">Contact Us</a>
+                                                    <a href="#">Contact</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Reviews</a>
                                                 </li>
                                             </ul>
                                         </div>
