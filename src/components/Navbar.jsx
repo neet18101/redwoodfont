@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import React from 'react'
 
 function Navbar() {
@@ -12,10 +13,10 @@ function Navbar() {
                             <div className="pbmit-logo-button-area d-flex justify-content-between align-items-center">
                                 <div className="site-branding">
                                     <h1 className="site-title">
-                                        <a href="#">
+                                        <Link href="/">
 
                                             <h6 className='underline'>Red Wood Shop</h6>
-                                        </a>
+                                        </Link>
                                     </h1>
                                     <div className="pbmit-sticky-corner  pbmit-top-right-corner">
                                         <svg
@@ -89,7 +90,7 @@ function Navbar() {
                                             </span>
                                             <ul className="navigation clearfix">
                                                 <li className="dropdown active">
-                                                    <a href="index-2.html">Home</a>
+                                                    <Link href="/">Home</Link>
 
                                                 </li>
                                                 <li className="dropdown">
@@ -123,7 +124,7 @@ function Navbar() {
                                                     </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">About</a>
+                                                    <a href="/about">About</a>
 
                                                 </li>
                                                 <li className="dropdown">
