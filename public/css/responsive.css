@@ -1020,6 +1020,7 @@ body {
     }
 	.pbminfotech-ele-fid-style-2 .pbmit-fid-inner{
 		font-size: 80px;
+		text-align: center;
 		line-height: 90px;
 	}
 	.service-one{
@@ -1741,6 +1742,7 @@ body {
 	.pbminfotech-ele-fid-style-2 .pbmit-fid-inner{
 		font-size: 60px;
 		line-height: 70px;
+		text-align: center;
 	}
 	.pbmit-service-style-2 .pbmit-content-box{
 		padding:0;
