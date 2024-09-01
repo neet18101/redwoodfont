@@ -40,7 +40,7 @@ function Navbar() {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className="pbmit-button-box">
+                                {/* <div className="pbmit-button-box">
                                     <div className="pbmit-header-button">
                                         <a href="tel:0738-011-11-66">
                                             <span className="pbmit-header-button-text-1">
@@ -51,7 +51,7 @@ function Navbar() {
                                             </span>
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="site-navigation">
                                 <nav className="main-menu navbar-expand-xl navbar-light">
@@ -93,7 +93,7 @@ function Navbar() {
 
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Shop Fronts</a>
+                                                    <a href="#">Service</a>
                                                     {/* <ul>
                                                         <li>
                                                             <a href="about-us.html">Shop Fronts</a>
@@ -108,12 +108,19 @@ function Navbar() {
                                                     </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Shutters</a>
+                                                    <a href="#">Blog</a>
+                                                    {/* <ul>
+                                                        <li>
+                                                            <a href="about-us.html">Shop Fronts</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="our-history.html">Shutters</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="our-team.html">Windows</a>
+                                                        </li>
 
-                                                </li>
-                                                <li className="dropdown">
-                                                    <a href="#">Windows</a>
-
+                                                    </ul> */}
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">About</a>
@@ -123,83 +130,27 @@ function Navbar() {
                                                     <a href="#">Gallery</a>
 
                                                 </li>
-
                                                 <li className="dropdown">
-                                                    <a href="#">Blog</a>
-                                                    {/* <ul>
-                                                        <li className="dropdown">
-                                                            <a href="#">Blog Masonry View</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="blog-m-grid-col-2.html">
-                                                                        Grid Col 2
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-m-grid-col-3.html">
-                                                                        Grid Col 3
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-m-grid-col-4.html">
-                                                                        Grid Col 4
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-masonry-wide.html">
-                                                                        Masonry Wide
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="dropdown">
-                                                            <a href="#">Blog Grid View</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="blog-grid-col-2.html">
-                                                                        Grid Col 2
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-grid-col-3.html">
-                                                                        Grid Col 3
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-grid-col-4.html">
-                                                                        Grid Col 4
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="blog-sortable-grid-view.html">
-                                                                        Sortable Grid View
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog-classic.html">Blog Classic</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="blog-single-details.html">
-                                                                Blog Single Details
-                                                            </a>
-                                                        </li>
-                                                    </ul> */}
-                                                </li>
-                                                <li>
                                                     <a href="#">Contact</a>
                                                 </li>
-                                                <li>
-                                                    <a href="#">Reviews</a>
+                                                <li className="dropdown">
+                                                    <a href="#">Faq's</a>
+
                                                 </li>
+                                                {/* <li className="dropdown">
+                                                    <a href="#">Faq's</a>
+                                                </li> */}
+
+                                              
                                             </ul>
                                         </div>
                                     </div>
                                 </nav>
                             </div>
                             <div className="pbmit-right-box d-flex align-items-center">
-                                
+                                <div className="pbmit-header-search-btn">
+                                   
+                                </div>
                                 <div className="pbmit-button-box-second">
                                     <a className="pbmit-btn" href="contact-us.html">
                                         <span className="pbmit-button-content-wrapper">

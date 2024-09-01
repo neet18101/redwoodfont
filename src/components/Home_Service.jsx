@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -76,7 +77,7 @@ function Home_Service() {
                                                     <div className="pbmit-featured-img-wrapper">
                                                         <div className="pbmit-featured-wrapper">
                                                             <img
-                                                                src="images/home/homeServ/front.webp"
+                                                                src="images/service/service.webp"
                                                                 className="img-fluid"
                                                                 alt="service-01"
                                                             />
@@ -87,15 +88,15 @@ function Home_Service() {
                                                     <i className />
                                                 </div>
                                                 <div className="pbmit-content-box">
-                                                    
+
                                                     <h3 className="pbmit-service-title">
-                                                        <a href="service-details.html">
-                                                            Automatic Shop Fronts
+                                                        <a href="">
+                                                            Aluminum Shop Fronts
                                                         </a>
                                                     </h3>
                                                     <div className="pbmit-service-description">
                                                         <p>
-                                                            The automatic door systems open up an almost unlimited range of door design .
+                                                            Shop fronts are designed to make the best possible utilization of the accessible space and light, and we might meet any.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -104,51 +105,6 @@ function Home_Service() {
                                                 className="pbmit-service-btn"
                                                 href="service-details.html"
                                                 title="Transforming Rooms"
-                                            >
-                                                <span className="pbmit-button-icon">
-                                                    <i className="pbmit-base-icon-pbmit-up-arrow" />
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    {/* Slide2 */}
-                                    <article className="pbmit-ele-service pbmit-service-style-2">
-                                        <div className="pbminfotech-post-item">
-                                            <div className="pbminfotech-box-content">
-                                                <div className="pbmit-service-image-wrapper">
-                                                    <div className="pbmit-featured-img-wrapper">
-                                                        <div className="pbmit-featured-wrapper">
-                                                            <img
-                                                                src="images/home/homeServ/shutter.webp"
-                                                                className="img-fluid"
-                                                                alt="service-01"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="pbmit-service-icon elementor-icon">
-                                                    <i className="" />
-                                                </div>
-                                                <div className="pbmit-content-box">
-                                                    
-                                                    <h3 className="pbmit-service-title">
-                                                        <a href="service-details.html">
-                                                            Perforated Shutters
-                                                        </a>
-                                                    </h3>
-                                                    <div className="pbmit-service-description">
-                                                        <p>
-                                                            We are leading manufacturer, supplier of Punched Hole Shutters.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a
-                                                className="pbmit-service-btn"
-                                                href="service-details.html"
-                                                title="Weaving Dreams"
                                             >
                                                 <span className="pbmit-button-icon">
                                                     <i className="pbmit-base-icon-pbmit-up-arrow" />
@@ -167,7 +123,7 @@ function Home_Service() {
                                                     <div className="pbmit-featured-img-wrapper">
                                                         <div className="pbmit-featured-wrapper">
                                                             <img
-                                                                src="images/home/homeServ/window.webp"
+                                                                src="images/service/door.webp"
                                                                 className="img-fluid"
                                                                 alt="service-01"
                                                                 height={433}
@@ -179,15 +135,15 @@ function Home_Service() {
                                                     <i className="" />
                                                 </div>
                                                 <div className="pbmit-content-box">
-                                                    
+
                                                     <h3 className="pbmit-service-title">
-                                                        <a href="service-details.html">
-                                                            Door Blinds
+                                                        <a href="#">
+                                                        Automatic door 
                                                         </a>
                                                     </h3>
                                                     <div className="pbmit-service-description">
                                                         <p>
-                                                            The  glass shopfront is an important consideration for any business.
+                                                            The automatic door systems from Redwood Shopfront open up an almost unlimited range of door design options.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -214,7 +170,7 @@ function Home_Service() {
                                                     <div className="pbmit-featured-img-wrapper">
                                                         <div className="pbmit-featured-wrapper">
                                                             <img
-                                                                src="images/homepage-1/service/service-04.jpg"
+                                                                src="images/service/service3.webp"
                                                                 className="img-fluid"
                                                                 alt="service-01"
                                                             />
@@ -225,20 +181,15 @@ function Home_Service() {
                                                     <i className="" />
                                                 </div>
                                                 <div className="pbmit-content-box">
-                                                    <div className="pbmit-serv-cat">
-                                                        <a href="#" rel="tag">
-                                                            Kitchen
-                                                        </a>
-                                                    </div>
+                                                    
                                                     <h3 className="pbmit-service-title">
-                                                        <a href="service-details.html">
-                                                            Professional Interior
+                                                        <a href="">
+                                                        BI-folding Entrance doors
                                                         </a>
                                                     </h3>
                                                     <div className="pbmit-service-description">
                                                         <p>
-                                                            The interior professional worker’s available
-                                                            in the xinterio
+                                                        There are many sorts of doorways available on the marketplace for your house.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -256,7 +207,7 @@ function Home_Service() {
                                     </article>
                                 </SwiperSlide>
 
-                                
+
                             </Swiper>
                         </div>
                     </div>
