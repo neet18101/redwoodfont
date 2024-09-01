@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import React from 'react'
 
 function Navbar() {
@@ -123,7 +124,7 @@ function Navbar() {
                                                     </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">About</a>
+                                                    <Link href="/about">About</Link>
 
                                                 </li>
                                                 <li className="dropdown">
