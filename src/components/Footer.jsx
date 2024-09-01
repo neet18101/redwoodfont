@@ -88,8 +88,8 @@ function Footer() {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-md-4 pbmit-footer-left">
-                                    <span className="pbmit-email-text"> hello@example.com</span>
-                                    <span className="pbmit-phone-number"> +79 2589 63598</span>
+                                    <span className="pbmit-email-text"> info@redwoodshopfront.co.uk</span>
+                                    <span className="pbmit-phone-number">  0738-011-11-66</span>
                                 </div>
                                 <div className="col-md-4 pbmit-footer-right">
                                     <span className="pbmit-address">
@@ -141,7 +141,7 @@ function Footer() {
                                 <div className="col-md-12">
                                     <div className="pbmit-footer-copyright-text-area">
                                         {" "}
-                                        Copyright © 2024 <a href="index-2.html">Xinterio Demo1</a>
+                                        Copyright © {new Date().getFullYear()} <a href="#">Red Wood Shop</a>
                                         , All Rights Reserved.
                                     </div>
                                 </div>

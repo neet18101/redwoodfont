@@ -12,8 +12,8 @@ function Navbar() {
                             <div className="pbmit-logo-button-area d-flex justify-content-between align-items-center">
                                 <div className="site-branding">
                                     <h1 className="site-title">
-                                        <a href="index-2.html">
-                                            
+                                        <a href="#">
+
                                             <h6 className='underline'>Red Wood Shop</h6>
                                         </a>
                                     </h1>
@@ -42,12 +42,12 @@ function Navbar() {
                                 </div>
                                 <div className="pbmit-button-box">
                                     <div className="pbmit-header-button">
-                                        <a href="tel:+1(212)%20255-511">
+                                        <a href="tel:0738-011-11-66">
                                             <span className="pbmit-header-button-text-1">
-                                                +1(212) 255-511
+                                                0738-011-11-66
                                             </span>
                                             <span className="pbmit-header-button-text-2">
-                                                tel:+1(212) 255-511
+                                                tel:0738-011-11-66
                                             </span>
                                         </a>
                                     </div>
@@ -90,7 +90,7 @@ function Navbar() {
                                             <ul className="navigation clearfix">
                                                 <li className="dropdown active">
                                                     <a href="index-2.html">Home</a>
-                                                    
+
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">Our Products</a>
@@ -104,26 +104,26 @@ function Navbar() {
                                                         <li>
                                                             <a href="our-team.html">Windows</a>
                                                         </li>
-                                                        
+
                                                     </ul>
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">About Us</a>
-                                                    
+
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">Gallery</a>
-                                                    
+
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">Blog</a>
-                                                    
+
                                                 </li>
                                                 <li className="dropdown">
                                                     <a href="#">Contact</a>
-                                                    
+
                                                 </li>
-                                                
+
                                                 <li className="dropdown">
                                                     <a href="#">Blogs</a>
                                                     <ul>
