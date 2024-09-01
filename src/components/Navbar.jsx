@@ -89,7 +89,7 @@ function Navbar() {
                                             </span>
                                             <ul className="navigation clearfix">
                                                 <li className="dropdown active">
-                                                    <a href="index-2.html">Home</a>
+                                                    <Link href="/">Home</Link>
 
                                                 </li>
                                                 <li className="dropdown">
@@ -123,7 +123,7 @@ function Navbar() {
                                                     </ul> */}
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">About</a>
+                                                    <a href="/about">About</a>
 
                                                 </li>
                                                 <li className="dropdown">
