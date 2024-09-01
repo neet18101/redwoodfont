@@ -93,9 +93,9 @@ function Footer() {
                                 </div>
                                 <div className="col-md-4 pbmit-footer-right">
                                     <span className="pbmit-address">
-                                        {" "}
-                                        Chicago HQ Estica cop, <br />
-                                        Macomb,MI 48042
+                                        {" "}12 Creek Rd, Barking IG11 0JH,
+                                        <br />
+                                        London
                                     </span>
                                 </div>
                                 <div className="col-md-4 pbmit-footer-right-social">

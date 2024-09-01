@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
         {/* CSS
    ============================================ */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* Bootstrap CSS */}
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         {/* Fontawesome */}
@@ -40,16 +40,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="css/style.css" />
         {/* Responsive CSS */}
         <link rel="stylesheet" href="css/responsive.css" />
-
-
       </head>
       <body className={inter.className}>
-        
-        
-
         {children}
 
-        <Footer/>
+        <Footer />
 
         {/* JS
 		============================================ */}
@@ -89,30 +84,29 @@ export default function RootLayout({ children }) {
         <script src="js/aos.js"></script>
         {/* GSAP */}
 
-        <script src='js/gsap.js'></script>
+        <script src="js/gsap.js"></script>
         {/* Scroll Trigger */}
 
-        <script src='js/ScrollTrigger.js'></script>
+        <script src="js/ScrollTrigger.js"></script>
         {/* Split Text */}
 
-        <script src='js/SplitText.js'></script>
+        <script src="js/SplitText.js"></script>
         {/* Magnetic */}
 
-        <script src='js/magnetic.js'></script>
+        <script src="js/magnetic.js"></script>
         {/* Morphext JS */}
 
         <script src="js/morphext.min.js"></script>
         <script src="js/popper.min.js"></script>
         {/* GSAP Animation */}
 
-        <script src='js/gsap-animation.js'></script>
+        <script src="js/gsap-animation.js"></script>
         {/* Isotope JS */}
 
         <script src="js/isotope.pkgd.min.js"></script>
         {/* Scripts JS */}
 
         <script src="js/scripts.js"></script>
-
       </body>
     </html>
   );
