@@ -142,7 +142,7 @@ function Footer() {
                                     <div className="pbmit-footer-copyright-text-area">
                                         {" "}
                                         Copyright © {new Date().getFullYear()} <a href="#">Red Wood Shop</a>
-                                        , All Rights Reserved.
+                                        , All Rights Reserved. Designed by Web-Fluxx
                                     </div>
                                 </div>
                             </div>
