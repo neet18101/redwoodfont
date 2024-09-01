@@ -13,11 +13,8 @@ function Navbar() {
                                 <div className="site-branding">
                                     <h1 className="site-title">
                                         <a href="index-2.html">
-                                            <img
-                                                className="logo-img"
-                                                src="images/logo.svg"
-                                                alt="Xinterio"
-                                            />
+                                            
+                                            <h6 className='underline'>Red Wood Shop</h6>
                                         </a>
                                     </h1>
                                     <div className="pbmit-sticky-corner  pbmit-top-right-corner">
@@ -93,140 +90,40 @@ function Navbar() {
                                             <ul className="navigation clearfix">
                                                 <li className="dropdown active">
                                                     <a href="index-2.html">Home</a>
+                                                    
+                                                </li>
+                                                <li className="dropdown">
+                                                    <a href="#">Our Products</a>
                                                     <ul>
-                                                        <li className="active">
-                                                            <a href="index-2.html">Homepage 01</a>
+                                                        <li>
+                                                            <a href="about-us.html">Shop Fronts</a>
                                                         </li>
                                                         <li>
-                                                            <a href="homepage-2.html">Homepage 02</a>
+                                                            <a href="our-history.html">Shutters</a>
                                                         </li>
                                                         <li>
-                                                            <a href="homepage-3.html">Homepage 03</a>
+                                                            <a href="our-team.html">Windows</a>
                                                         </li>
+                                                        
                                                     </ul>
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Pages</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="about-us.html">About Us</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="our-history.html">Our History</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="our-team.html">Our Team</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="team-single-details.html">
-                                                                Team Single Details
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="faq.html">Faq</a>
-                                                        </li>
-                                                    </ul>
+                                                    <a href="#">About Us</a>
+                                                    
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Services</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="service-details.html">
-                                                                Service Detail
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                    <a href="#">Gallery</a>
+                                                    
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Portfolio</a>
-                                                    <ul>
-                                                        <li className="dropdown">
-                                                            <a href="#">Masonry View</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="portfolio-m-grid-col-2.html">
-                                                                        Grid Col 2
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-m-grid-col-3.html">
-                                                                        Grid Col 3
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-m-grid-col-4.html">
-                                                                        Grid Col 4
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-m-grid-col-wide.html">
-                                                                        Grid Wide
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="dropdown">
-                                                            <a href="#">Grid View</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="portfolio-grid-col-2.html">
-                                                                        Grid Col 2
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-grid-col-3.html">
-                                                                        Grid Col 3
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-grid-col-4.html">
-                                                                        Grid Col 4
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-grid-no-gap.html">
-                                                                        Grid No Gap
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="dropdown">
-                                                            <a href="#">Sortable View</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="portfolio-sortable-grid-col-2.html">
-                                                                        Grid Col 2
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-sortable-grid-col-3.html">
-                                                                        Grid Col 3
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-sortable-grid-col-4.html">
-                                                                        Grid Col 4
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="dropdown">
-                                                            <a href="#">Single Detail Style</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="portfolio-detail-style-1.html">
-                                                                        Portfolio Detail Style 1
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="portfolio-detail-style-2.html">
-                                                                        Portfolio Detail Style 2
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
+                                                    <a href="#">Blog</a>
+                                                    
                                                 </li>
+                                                <li className="dropdown">
+                                                    <a href="#">Contact</a>
+                                                    
+                                                </li>
+                                                
                                                 <li className="dropdown">
                                                     <a href="#">Blogs</a>
                                                     <ul>

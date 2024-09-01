@@ -62,7 +62,7 @@ function Hero() {
                                         className="pbmit-slider-bg"
                                         style={{
                                             backgroundImage:
-                                                "url(images/banner-slider-img/demo1-slide-01.jpg)",
+                                                "url(images/bg/bg1.webp)",
                                         }}
                                     />
                                     <div className="container">
@@ -99,7 +99,7 @@ function Hero() {
                                         className="pbmit-slider-bg"
                                         style={{
                                             backgroundImage:
-                                                "url(images/banner-slider-img/demo1-slide-02.jpg)",
+                                                "url(images/bg/bg2.webp)",
                                         }}
                                     />
                                     <div className="container">
@@ -136,7 +136,7 @@ function Hero() {
                                         className="pbmit-slider-bg"
                                         style={{
                                             backgroundImage:
-                                                "url(images/banner-slider-img/demo1-slide-03.jpg)",
+                                                "url(images/bg/bg3.webp)",
                                         }}
                                     />
                                     <div className="container">
