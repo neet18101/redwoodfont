@@ -121,10 +121,10 @@ function Navbar() {
 
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Contact</a>
+                                                    <Link href="/contact">Contact</Link>
                                                 </li>
                                                 <li className="dropdown">
-                                                    <a href="#">Faq's</a>
+                                                    <Link href="/f_a_q">Faq's</Link>
 
                                                 </li>
                                                 {/* <li className="dropdown">

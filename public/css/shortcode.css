@@ -2730,7 +2730,7 @@ body {
 	color: inherit;
     border-bottom: none;
 	box-shadow: none;
-	border-bottom: 1px solid rgba(var(--pbmit-blackish-color-rgb),.2);
+	border-bottom: 1px solid rgba(var(--pbmit-blackish-color-rgb),.2) !important;
 }
 .accordion-item:last-child{
 	border-bottom: none;
