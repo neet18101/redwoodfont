@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 import React from 'react'
+import { usePathname } from 'next/navigation'
 
 function Navbar() {
+    const pathname = usePathname()
     return (
         <>
             <div className="pbmit-header-overlay">
@@ -41,7 +43,18 @@ function Navbar() {
                                         </svg>
                                     </div>
                                 </div>
-                                
+                                {/* <div className="pbmit-button-box">
+                                    <div className="pbmit-header-button">
+                                        <a href="tel:0738-011-11-66">
+                                            <span className="pbmit-header-button-text-1">
+                                                0738-011-11-66
+                                            </span>
+                                            <span className="pbmit-header-button-text-2">
+                                                tel:0738-011-11-66
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div> */}
                             </div>
                             <div className="site-navigation">
                                 <nav className="main-menu navbar-expand-xl navbar-light">
@@ -78,12 +91,12 @@ function Navbar() {
                                                 </svg>
                                             </span>
                                             <ul className="navigation clearfix">
-                                                <li className="dropdown active">
+                                                <li className={`dropdown ${pathname === "/" ? "active" : ""}`}>
                                                     <Link href="/">Home</Link>
 
                                                 </li>
-                                                <li className="dropdown">
-                                                    <a href="#">Service</a>
+                                                <li className={`dropdown ${pathname === "/service" ? "active" : ""}`}>
+                                                    <Link href="#">Service</Link>
                                                     {/* <ul>
                                                         <li>
                                                             <a href="about-us.html">Shop Fronts</a>
@@ -97,7 +110,7 @@ function Navbar() {
 
                                                     </ul> */}
                                                 </li>
-                                                <li className="dropdown">
+                                                <li className={`dropdown ${pathname === "/blog" ? "active" : ""}`}>
                                                     <a href="#">Blog</a>
                                                     {/* <ul>
                                                         <li>
@@ -112,18 +125,18 @@ function Navbar() {
 
                                                     </ul> */}
                                                 </li>
-                                                <li className="dropdown">
+                                                <li className={`dropdown ${pathname === "/about" ? "active" : ""}`}>
                                                     <Link href="/about">About</Link>
 
                                                 </li>
-                                                <li className="dropdown">
+                                                <li className={`dropdown ${pathname === "/gallery" ? "active" : ""}`}>
                                                     <a href="#">Gallery</a>
 
                                                 </li>
-                                                <li className="dropdown">
+                                                <li className={`dropdown ${pathname === "/contact" ? "active" : ""}`}>
                                                     <a href="#">Contact</a>
                                                 </li>
-                                                <li className="dropdown">
+                                                <li className={`dropdown ${pathname === "/faq" ? "active" : ""}`}>
                                                     <a href="#">Faq's</a>
 
                                                 </li>
@@ -131,7 +144,7 @@ function Navbar() {
                                                     <a href="#">Faq's</a>
                                                 </li> */}
 
-                                              
+
                                             </ul>
                                         </div>
                                     </div>
@@ -139,7 +152,7 @@ function Navbar() {
                             </div>
                             <div className="pbmit-right-box d-flex align-items-center">
                                 <div className="pbmit-header-search-btn">
-                                   
+
                                 </div>
                                 <div className="pbmit-button-box-second">
                                     <a className="pbmit-btn" href="contact-us.html">
