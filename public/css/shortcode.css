@@ -2445,7 +2445,7 @@ body {
 	padding-top: 40px;
 }
 .site-footer .widget {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     position: relative;
 }
 .site-footer .pbmit-two-column-menu.widget ul {
@@ -2453,6 +2453,7 @@ body {
     flex-wrap: wrap;
 }
 .site-footer .pbmit-two-column-menu.widget ul>li {
+	text-align: center;
     width: 50%;
 }
 .site-footer .widget ul>li {
@@ -2729,7 +2730,7 @@ body {
 	color: inherit;
     border-bottom: none;
 	box-shadow: none;
-	border-bottom: 1px solid rgba(var(--pbmit-blackish-color-rgb),.2);
+	border-bottom: 1px solid rgba(var(--pbmit-blackish-color-rgb),.2) !important;
 }
 .accordion-item:last-child{
 	border-bottom: none;

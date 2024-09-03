@@ -97,25 +97,28 @@ function Home() {
           {/* Testimonial End */}
           {/* Video Start */}
           <section className="pbmit-bg-color-secondary video-section-one fadeIn animated animated-slow">
-            <div className="pbmit-bg-overlay" />
+            <div className="pbmit-bg-overlay" style={{
+              backgroundImage:
+                "url(images/bg/bg3.webp)",
+            }} />
             <div className="container">
               <div className="text-center">
                 <div className="pbmit-heading-subheading-style-1 animation-style4">
                   <h4 className="pbmit-subtitle">
-                    Emergency call 123 4567 890
+                    Emergency call 0738-011-11-66
                   </h4>
                   <h2 className="pbmit-title">
-                    We make the creative interior <br />
+                    We make the creative fronts <br />
                     solutions for{" "}
                     <span id="js-rotating">
-                      manufacture, development, composition, explanation
+                      leading retail clients.
                     </span>
                   </h2>
                 </div>
                 <div className="play-button">
                   <a
                     className="pbmit-icon pbmin-lightbox-video"
-                    href="https://www.youtube.com/watch?v=Sv2_JktdvmQ"
+                    href="https://www.youtube.com/watch?v=EKWprEex9u8&t=3s"
                   >
                     <i className="fa fa-play" />
                   </a>
