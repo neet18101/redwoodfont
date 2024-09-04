@@ -130,7 +130,7 @@ function Navbar() {
 
                                                 </li>
                                                 <li className={`dropdown ${pathname === "/gallery" ? "active" : ""}`}>
-                                                    <a href="#">Gallery</a>
+                                                    <Link href="/gallery">Gallery</Link>
 
                                                 </li>
                                                 <li className={`dropdown ${pathname === "/contact" ? "active" : ""}`}>
