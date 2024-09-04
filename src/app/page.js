@@ -6,6 +6,7 @@ import Home_Service from "@/components/Home_Service";
 import WhyChoose from "@/components/WhyChoose";
 import TestimonialSlider from "./_components/TestimonialSlider";
 import BlogSlider from "./_components/BlogSlider";
+import connectDB from "@/utils/connectDB";
 
 export const metadata = {
   title: "London Shopfronts, Shutters, Entrance Doors, Awnings",
@@ -13,6 +14,7 @@ export const metadata = {
     "Redwood Shopfront Provide All type of Shutter , Shopfronts, Windows, Security Shutter And many More...",
 };
 function Home() {
+  connectDB();
   return (
     <>
       <div className="page-wrapper">
