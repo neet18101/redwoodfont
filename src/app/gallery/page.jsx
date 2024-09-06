@@ -6,7 +6,7 @@ function page() {
         <div className="page-wrapper">
             {/* Header Main Area */}
             <header className="site-header header-style-1">
-                <Navbar/>
+                <Navbar />
             </header>
             {/* Header Main Area End Here */}
             {/* Title Bar */}
@@ -44,16 +44,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-01b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/House_Door.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Bedroom</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">House Door</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Innovation</a>
+                                                <a href="portfolio-detail-style-1.html"> Installation & Repair</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -63,16 +63,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-02b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/05-1.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Furniture</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Doors</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Minimalism</a>
+                                                <a href="portfolio-detail-style-1.html">Aluminum Shop Fronts</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -82,16 +82,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-03b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/01-1.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Interior</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Windows</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Lighting</a>
+                                                <a href="portfolio-detail-style-1.html">Aluminum Windows</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -101,16 +101,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-04b.jpg" className="img-fluid" alt />
+                                            <img src="/images/redWoodImg/06-1.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Kitchen</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Doors</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Bold Tiles</a>
+                                                <a href="portfolio-detail-style-1.html">BI-folding Entrance doors</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -120,16 +120,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-05b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/skyline.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Bedroom</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Wall</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Clean lines</a>
+                                                <a href="portfolio-detail-style-1.html">Curtain Wall Mirror</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -139,16 +139,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-06b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/timber.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Architecture</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Doors</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Integral</a>
+                                                <a href="portfolio-detail-style-1.html">Timber Doors</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -158,16 +158,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-07b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/blue.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Interior</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Shutters</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Functionality</a>
+                                                <a href="portfolio-detail-style-1.html">Perforated Shutters</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -177,16 +177,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-08b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/IMG-1.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Furniture</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Shutters</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Terracotta</a>
+                                                <a href="portfolio-detail-style-1.html">Solid Roller Shutters</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -196,16 +196,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-05b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/Timber_Shopfront2.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Bedroom</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Shorfront</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Clean lines</a>
+                                                <a href="portfolio-detail-style-1.html">Timber Shopfront</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -215,16 +215,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-06b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/architech.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Architecture</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Shutters</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Integral</a>
+                                                <a href="portfolio-detail-style-1.html">Roller Grill Shutter</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -234,16 +234,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-07b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodimg/architech.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Interior</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Wall</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Functionality</a>
+                                                <a href="portfolio-detail-style-1.html">Aluminum Curtain Wall</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -253,16 +253,16 @@ function page() {
                                 <div className="pbminfotech-post-content">
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
-                                            <img src="images/portfolio/portfolio-08b.jpg" className="img-fluid" alt />
+                                            <img src="images/redWoodImg/02-3.jpg" className="img-fluid" alt />
                                         </div>
                                     </div>
                                     <div className="pbminfotech-box-content">
                                         <div className="pbminfotech-titlebox">
                                             <div className="pbmit-port-cat">
-                                                <a href="portfolio-grid-col-3.html" rel="tag">Furniture</a>
+                                                <a href="portfolio-grid-col-3.html" rel="tag">Doors</a>
                                             </div>
                                             <h3 className="pbmit-portfolio-title">
-                                                <a href="portfolio-detail-style-1.html">Terracotta</a>
+                                                <a href="portfolio-detail-style-1.html">Automatic Door</a>
                                             </h3>
                                         </div>
                                     </div>
@@ -273,7 +273,7 @@ function page() {
                 </section>
                 {/* Portfolio Grid col 4 End */}
             </div>
-            
+
         </div>
 
 

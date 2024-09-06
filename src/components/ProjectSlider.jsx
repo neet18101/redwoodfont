@@ -61,7 +61,7 @@ function ProjectSlider() {
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
                                             <img
-                                                src="images/homepage-2/blog/blog-01.jpg"
+                                                src="images/redWoodImg/08.jpg"
                                                 className="img-fluid"
                                                 alt=""
                                             />
@@ -81,7 +81,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                
+
                             </div>
                         </div>
                     </article>
@@ -97,7 +97,7 @@ function ProjectSlider() {
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
                                             <img
-                                                src="images/homepage-2/blog/blog-02.jpg"
+                                                src="images/redWoodImg/03-1.jpg"
                                                 className="img-fluid"
                                                 alt=""
                                             />
@@ -117,7 +117,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                
+
                             </div>
                         </div>
                     </article>
@@ -133,7 +133,7 @@ function ProjectSlider() {
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
                                             <img
-                                                src="images/homepage-2/blog/blog-03.jpg"
+                                                src="images/redWoodImg/01.jpg"
                                                 className="img-fluid"
                                                 alt=""
                                             />
@@ -153,7 +153,7 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                
+
                             </div>
                         </div>
                     </article>
@@ -168,7 +168,7 @@ function ProjectSlider() {
                                     <div className="pbmit-featured-img-wrapper">
                                         <div className="pbmit-featured-wrapper">
                                             <img
-                                                src="images/homepage-2/blog/blog-04.jpg"
+                                                src="images/redWoodImg/1.jpg"
                                                 className="img-fluid"
                                                 alt=""
                                             />
@@ -188,12 +188,46 @@ function ProjectSlider() {
                                         href="blog-single-details.html"
                                     />
                                 </div>
-                                
+
                             </div>
                         </div>
                     </article>
                 </SwiperSlide>
 
+                <SwiperSlide>
+                    {/* Slide5 */}
+                    <article className="pbmit-ele-blog pbmit-blog-style-1 swiper-slide">
+                        <div className="post-item">
+                            <div className="pbminfotech-box-content">
+                                <div className="pbmit-featured-container">
+                                    <div className="pbmit-featured-img-wrapper">
+                                        <div className="pbmit-featured-wrapper">
+                                            <img
+                                                src="images/redWoodImg/Roof2.jpg"
+                                                className="img-fluid"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <a
+                                        className="pbmit-blog-btn"
+                                        href="blog-single-details.html"
+                                        title="Four Ways for Creating Extra Space in Small Homes"
+                                    >
+                                        <span className="pbmit-button-icon">
+                                            <i className="pbmit-base-icon-pbmit-up-arrow" />
+                                        </span>
+                                    </a>
+                                    <a
+                                        className="pbmit-link"
+                                        href="blog-single-details.html"
+                                    />
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                </SwiperSlide>
 
             </Swiper>
 
