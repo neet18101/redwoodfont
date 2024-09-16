@@ -44,7 +44,7 @@ export const metadata = {
       <body className={inter.className}>
         {children}
 
-        <Footer />
+        
 
         {/* JS
 		============================================ */}

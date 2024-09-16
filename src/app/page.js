@@ -6,6 +6,7 @@ import Home_Service from "@/components/Home_Service";
 import WhyChoose from "@/components/WhyChoose";
 import TestimonialSlider from "./_components/TestimonialSlider";
 import BlogSlider from "./_components/BlogSlider";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "London Shopfronts, Shutters, Entrance Doors, Awnings",
@@ -21,6 +22,7 @@ function Home() {
           <Navbar />
           <Hero />
         </header>
+        {/* <Button>Click me</Button> */}
         {/* Header Main Area End Here */}
         {/* Page Content */}
         <div className="page-content">
@@ -143,6 +145,7 @@ function Home() {
         {/* Page Content End */}
 
       </div>
+      <Footer />
     </>
   );
 }

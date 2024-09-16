@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
 import "./shopfront.css"
+import Footer from "@/components/Footer";
 function page() {
     return (
         <div>
@@ -421,6 +422,7 @@ function page() {
                 </div>
                 {/* Page Content End */}
             </div>
+            <Footer />
         </div>
     );
 }

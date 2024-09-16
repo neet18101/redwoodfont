@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import ProjectSlider from '@/components/ProjectSlider'
 import React from 'react'
@@ -402,6 +403,7 @@ function page() {
                 </section>
 
             </div>
+            <Footer />
             {/* Page Content End */}
         </>
 

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaSquareInstagram } from "react-icons/fa6"
+import Footer from "@/components/Footer";
 function Contact() {
     return (
         <>
@@ -343,6 +344,7 @@ function Contact() {
                 {/* Contact Us Content End */}
 
             </div>
+            <Footer />
         </>
     );
 }

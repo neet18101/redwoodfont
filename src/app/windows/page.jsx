@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import "./windows.css"
+import Footer from '@/components/Footer'
 
 function page() {
     return (
@@ -387,6 +388,7 @@ function page() {
                 </div>
                 {/* Page Content End */}
             </div>
+            <Footer />
         </div>
     )
 }
