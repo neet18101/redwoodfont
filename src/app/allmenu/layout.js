@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import Navbar from "./components_admin/Navbar";
-import Sidebar from "./components_admin/Sidebar";
+import Navbar from "../admin/components_admin/Navbar";
+import Sidebar from "../admin/components_admin/Sidebar";
+
 // import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,12 +14,16 @@ function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-
             </head>
-            {/* jsvectormap css */}
-            <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
-            {/*Swiper slider css*/}
-            <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+            <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+
+
+            {/* dropzone css */}
+            <link rel="stylesheet" href="assets/libs/dropzone/dropzone.css" type="text/css" />
+            {/* Filepond css */}
+            <link rel="stylesheet" href="assets/libs/filepond/filepond.min.css" type="text/css" />
+            <link rel="stylesheet" href="assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css" />
             {/* Layout config Js */}
             {/* Bootstrap Css */}
             <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,6 +33,8 @@ function RootLayout({ children }) {
             <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
             {/* custom Css*/}
             <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+
 
             <body className={inter.className}>
                 <div id="layout-wrapper">
@@ -111,3 +118,4 @@ function RootLayout({ children }) {
         </html>
     );
 }
+export default RootLayout
