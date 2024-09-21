@@ -7,12 +7,9 @@ function page() {
                 <div className="col-lg-12">
                     <div className="card">
                         <div className="card-header align-items-center d-flex">
-                            <h4 className="card-title mb-0 flex-grow-1">Input Example</h4>
+                            <h4 className="card-title mb-0 flex-grow-1">Enter Your Data</h4>
                             <div className="flex-shrink-0">
-                                <div className="form-check form-switch form-switch-right form-switch-md">
-                                    <label htmlFor="form-grid-showcode" className="form-label text-muted">Show Code</label>
-                                    <input className="form-check-input code-switcher" type="checkbox" id="form-grid-showcode" />
-                                </div>
+                                
                             </div>
                         </div>{/* end card header */}
                         <div className="card-body">

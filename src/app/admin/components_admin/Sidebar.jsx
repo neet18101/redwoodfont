@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Sidebar() {
@@ -9,19 +10,31 @@ function Sidebar() {
                     {/* Dark Logo*/}
                     <a href="index.html" className="logo logo-dark">
                         <span className="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt height={22} />
+                            {/* <img src="assets/images/logo-sm.png" alt height={22} /> */}
+                            <h4 className="mt-3 mb-5" style={{
+                                fontWeight:"600"
+                            }}>RED WOOD FRONTS</h4>
                         </span>
                         <span className="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt height={17} />
+                            {/* <img src="assets/images/logo-dark.png" alt height={17} /> */}
+                            <h4 className="mt-3 mb-5" style={{
+                                fontWeight:"600"
+                            }}>RED WOOD FRONTS</h4>
                         </span>
                     </a>
                     {/* Light Logo*/}
                     <a href="index.html" className="logo logo-light">
                         <span className="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt height={22} />
+                            {/* <img src="assets/images/logo-sm.png" alt height={22} /> */}
+                            <h4 className="mt-3 mb-5" style={{
+                                fontWeight:"600"
+                            }}>RED WOOD FRONTS</h4>
                         </span>
                         <span className="logo-lg">
-                            <img src="assets/images/logo-light.png" alt height={17} />
+                            {/* <img src="assets/images/logo-light.png" alt height={17} /> */}
+                            <h4 className="mt-3 mb-5" style={{
+                                fontWeight:"600"
+                            }}>RED WOOD FRONTS</h4>
                         </span>
                     </a>
                     <button type="button" className="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -32,31 +45,26 @@ function Sidebar() {
                     <div className="container-fluid">
                         <div id="two-column-menu" />
                         <ul className="navbar-nav" id="navbar-nav">
-                            <li className="menu-title"><span data-key="t-menu">Menu</span></li>
                             <li className="nav-item">
-                                <a className="nav-link menu-link" href="#sidebarDashboards"  role="button"  aria-controls="sidebarDashboards">
+                                <Link className="nav-link menu-link" href="/admin" >
                                     <i className="ri-dashboard-2-line" />
                                     <span data-key="t-dashboards">Dashboards</span>
-                                </a>
+                                </Link>
                             </li>
-
+                            <li className="menu-title"><span data-key="t-menu">Menu</span></li>
                             <li className="nav-item">
-                                <a className="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                                <Link className="nav-link menu-link" href="/allmenu"  role="button" >
                                     <i className="ri-layout-3-line" />
-                                    <span data-key="t-layouts">Menu</span>
+                                    <span data-key="t-layouts">All Menu</span>
+                                </Link>
 
-                                </a>
-                                <div className="collapse menu-dropdown" id="sidebarLayouts">
-                                    <ul className="nav nav-sm flex-column">
-                                        <li className="nav-item">
-                                            <a href="layouts-horizontal.html" target="_blank" className="nav-link" data-key="t-horizontal">Add Menu</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="layouts-detached.html" target="_blank" className="nav-link" data-key="t-detached">All Menu</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link menu-link" href="/add"  role="button"  >
+                                    <i className="ri-layout-3-line" />
+                                    <span data-key="t-layouts">Add Menu</span>
+                                </Link>
+
                             </li>
                             {/* end Dashboard Menu */}
 

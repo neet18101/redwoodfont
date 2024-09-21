@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import Navbar from "./components_admin/Navbar";
-import Sidebar from "./components_admin/Sidebar";
+import Navbar from "../admin/components_admin/Navbar";
+import Sidebar from "../admin/components_admin/Sidebar";
+
 // import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,6 @@ function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-
             </head>
             {/* jsvectormap css */}
             <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />

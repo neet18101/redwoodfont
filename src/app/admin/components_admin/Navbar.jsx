@@ -131,7 +131,7 @@ function Navbar() {
                             
                             
                             
-                            <div className="dropdown ms-sm-3 header-item topbar-user">
+                            {/* <div className="dropdown ms-sm-3 header-item topbar-user">
                                 <button type="button" className="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="d-flex align-items-center">
                                         <img className="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar" />
@@ -142,7 +142,7 @@ function Navbar() {
                                     </span>
                                 </button>
                                 <div className="dropdown-menu dropdown-menu-end">
-                                    {/* item*/}
+                                    
                                     <h6 className="dropdown-header">Welcome Anna!</h6>
                                     <a className="dropdown-item" href="pages-profile.html"><i className="mdi mdi-account-circle text-muted fs-16 align-middle me-1" /> <span className="align-middle">Profile</span></a>
                                     <a className="dropdown-item" href="apps-chat.html"><i className="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1" /> <span className="align-middle">Messages</span></a>
@@ -154,7 +154,7 @@ function Navbar() {
                                     <a className="dropdown-item" href="auth-lockscreen-basic.html"><i className="mdi mdi-lock text-muted fs-16 align-middle me-1" /> <span className="align-middle">Lock screen</span></a>
                                     <a className="dropdown-item" href="auth-logout-basic.html"><i className="mdi mdi-logout text-muted fs-16 align-middle me-1" /> <span className="align-middle" data-key="t-logout">Logout</span></a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
