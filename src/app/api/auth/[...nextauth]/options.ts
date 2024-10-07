@@ -1,13 +1,13 @@
+// pages/api/auth/[...nextauth].ts
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
-import executeQuery from "@/utils/executeQuery";
+import { executeQuery } from "@/utils/executeQuery"; // Ensure this path is correct
 
 interface User {
     id: number;
     email: string;
     username: string;
-    password: string;
 }
 
 export const authOptions: NextAuthOptions = {
@@ -19,32 +19,37 @@ export const authOptions: NextAuthOptions = {
                 email: { label: "Email", type: "text" },
                 password: { label: "Password", type: "password" }
             },
-            async authorize(credentials): Promise<any> {
-
+            async authorize(credentials): Promise<User | null> {
+                // Check if credentials are provided
                 if (!credentials?.email || !credentials?.password) {
                     throw new Error("Email and password are required");
                 }
-                try {
-                    console.log(credentials.email, credentials.password);
 
-                    // Query to find the user by email
+                try {
+                    console.log("authorize function called with credentials:", credentials);
+
+                    // Use executeQuery to fetch the user
                     const result = await executeQuery({
                         query: "SELECT * FROM admin WHERE email = ?",
                         values: [credentials.email],
                     });
 
+                    // Check if user exists
                     if (!Array.isArray(result) || result.length === 0) {
                         throw new Error("Invalid credentials");
                     }
                     const user = result[0];
-                    const isMatch = await bcrypt.compare(credentials.password, user?.password);
-                    console.log(isMatch);
+
+                    // Compare passwords
+                    const isMatch = await bcrypt.compare(credentials.password, user.password);
                     if (!isMatch) {
                         throw new Error("Incorrect password");
                     }
-                    console.log(user);
-                    return user;  // Return the user object if authentication is successful
+
+                    // Return the user object
+                    return { id: user.id, email: user.email, username: user.username }; // Return sanitized user object
                 } catch (error: any) {
+                    console.error("Authorization error:", error);
                     throw new Error(error.message || "Error during authorization");
                 }
             }
@@ -53,10 +58,9 @@ export const authOptions: NextAuthOptions = {
     callbacks: {
         async jwt({ token, user }) {
             if (user) {
-                token.id = user.id;
+                token.id = user.id as number;
                 token.username = user.username;
             }
-
             return token;
         },
         async session({ session, token }) {
@@ -68,7 +72,7 @@ export const authOptions: NextAuthOptions = {
         },
     },
     pages: {
-        signIn: "/admin/sign-in",
+        signIn: "/admin", // Customize your sign-in page path
     },
     session: {
         strategy: "jwt",

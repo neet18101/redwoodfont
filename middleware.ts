@@ -1,23 +1,29 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-export { default } from 'next-auth/middleware'
-import { getToken } from 'next-auth/jwt'
-// This function can be marked `async` if using `await` inside
-export async function middleware(request: NextRequest) {
-    const token = await getToken({ req: request, secret: process.env.SECRET })
-    const url = request.nextUrl
-    if (token && (url.pathname.startsWith('/admin/sign-in') || url.pathname.startsWith('/sign-up')) || url.pathname.startsWith('/verify')) {
-        return NextResponse.redirect(new URL('/admin/dashboard', request.url))
+// middleware.js
+import { NextResponse } from 'next/server';
+import { getToken } from 'next-auth/jwt';
 
-    }
-    if (!token && url.pathname.startsWith('/admin/dashboard')) {
-        return NextResponse.redirect(new URL('/admin/sign-in', request.url))
+// Secret to decrypt the token
+const secret = process.env.NEXTAUTH_SECRET;
 
-    }
-    return NextResponse.next()
+export async function middleware(req) {
+  const token = await getToken({ req, secret });
+
+  const { pathname } = req.nextUrl;
+
+  // Allow requests if the following is true:
+  // 1. Token exists (user is authenticated)
+  // 2. The user is accessing a public route like /admin (sign-in page)
+  if (token || pathname === '/admin') {
+    return NextResponse.next();
+  }
+
+  // Redirect unauthenticated user trying to access a protected route
+  if (pathname.startsWith('/admin/dashboard')) {
+    return NextResponse.redirect(new URL('/admin', req.url));
+  }
 }
 
-// See "Matching Paths" below to learn more
+// Define routes that should use this middleware
 export const config = {
-    matcher: ['/admin/sign-in', '/sign-up', '/', '/admin/dashboard/:path*', '/verify/:path*']
-}
+  matcher: ['/admin/dashboard/:path*'], // Protect the dashboard and sub-paths
+};
