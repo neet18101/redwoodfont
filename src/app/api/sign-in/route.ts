@@ -1,7 +1,6 @@
 // creating sign in route
 
 import executeQuery from "../../../utils/executeQuery.js";
-import connectDB from "../../../utils/connectDB.js";
 import bcrypt from "bcrypt";
 
 export async function POST(request: Request) {
