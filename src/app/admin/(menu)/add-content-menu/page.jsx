@@ -8,7 +8,10 @@ import Sidebar from '../../components_admin/Sidebar';
 export default function Page() {
     const [menuName, setMenuName] = useState('');
     const [selectedParent, setSelectedParent] = useState('');
+    const [selectedSubMenu, setSelectedSubMenu] = useState(''); // New state for selected subcategory
     const [menuItems, setMenuItems] = useState([]);
+    const [selectedMenu, setSelectedMenu] = useState(null);
+    const [subMenu, setSubMenu] = useState([]);
     const [sections, setSections] = useState([
         { sliderImage: null, content: '', serviceImages: [] },
     ]);
@@ -35,70 +38,104 @@ export default function Page() {
         fetchMenuItems();
     }, []);
 
+    // Handle slider image change
     const handleSliderImageChange = (index, e) => {
         const newSections = [...sections];
         newSections[index].sliderImage = e.target.files[0];
         setSections(newSections);
     };
 
+    // Handle TinyMCE content change
     const handleContentChange = (index, value) => {
         const newSections = [...sections];
         newSections[index].content = value;
         setSections(newSections);
     };
 
+    // Handle multiple service images change
     const handleServiceImagesChange = (index, e) => {
         const newSections = [...sections];
         newSections[index].serviceImages = Array.from(e.target.files);
         setSections(newSections);
     };
 
+    // Add a new service section
     const addSection = () => {
         setSections([...sections, { sliderImage: null, content: '', serviceImages: [] }]);
     };
 
+    // Remove a service section
     const removeSection = (index) => {
         const newSections = sections.filter((_, secIndex) => secIndex !== index);
         setSections(newSections);
     };
 
+    // Handle parent menu selection
+    const handleMenuChange = (event) => {
+        const selectedMenuId = event.target.value;
+        setSelectedParent(selectedMenuId);
+        const selected = menuItems.find((item) => item.id === parseInt(selectedMenuId));
+        setSelectedMenu(selected);
+        if (selected) {
+            // Filter submenus based on the selected menu's ID
+            const filteredSubMenus = menuItems.filter((item) => item.parent_id === parseInt(selectedMenuId));
+            setSubMenu(filteredSubMenus);
+        } else {
+            setSubMenu([]);
+        }
+        setSelectedSubMenu(''); // Reset subcategory selection when a new parent is selected
+    };
+
+    // Handle sub-menu change
+    const handleSubMenuChange = (event) => {
+        setSelectedSubMenu(event.target.value); // Set the selected subcategory
+    };
+
+    // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         // Prepare the payload for submission
         const formData = new FormData();
-        formData.append('menu_name', menuName);
-        formData.append('parent_id', selectedParent || '');
+        formData.append('menu_item_id', selectedParent || ''); // Adjusted key to match 'menu_item_id' column in DB
+        formData.append('sub_menu_id', selectedSubMenu || ''); // Sub menu ID is optional
+        formData.append('is_active', true); // Example for is_active (set to true by default)
 
         sections.forEach((section, index) => {
             if (section.sliderImage) {
-                formData.append(`sliderImage_${index}`, section.sliderImage);
+                formData.append(`slider_image_${index}`, section.sliderImage); // Adjusted to match 'slider_image' column
             }
-            formData.append(`content_${index}`, section.content);
+            formData.append(`content_${index}`, section.content); // Adjusted to match 'content' column
             section.serviceImages.forEach((file, imgIndex) => {
-                formData.append(`serviceImages_${index}_${imgIndex}`, file);
+                formData.append(`service_images_${index}_${imgIndex}`, file); // Collecting images for 'images' column
             });
         });
 
-        // Post the data to the API (implement your API accordingly)
+        // Log the form data to debug
+        console.log(formData,"neetx");
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}:`, value);
+        }
+
+        // Post the data to the API
         const res = await fetch('/api/add-content', {
             method: 'POST',
             body: formData,
         });
-        console.log(formData);
-        // console.log(res)
 
         if (res.ok) {
             alert('Menu item added successfully');
             // Reset form after submission
             setMenuName('');
             setSelectedParent('');
+            setSelectedSubMenu('');
             setSections([{ sliderImage: null, content: '', serviceImages: [] }]);
         } else {
             alert('Error adding menu item');
         }
     };
 
+    // Render menu options in the dropdown
     const renderMenuOptions = (items) => {
         return items.map((item) => (
             <option key={item.id} value={item.id}>
@@ -121,7 +158,7 @@ export default function Page() {
                                     <div className="page-title-right">
                                         <ol className="breadcrumb m-0">
                                             <li className="breadcrumb-item">
-                                                <a href="javascript: void(0);">Menu</a>
+                                                <a href="#">Menu</a>
                                             </li>
                                             <li className="breadcrumb-item active">Add Menu</li>
                                         </ol>
@@ -146,10 +183,33 @@ export default function Page() {
                                                                 className="form-select"
                                                                 id="parentMenu"
                                                                 value={selectedParent}
-                                                                onChange={(e) => setSelectedParent(e.target.value)}
+                                                                name="parentMenu" // Added the name attribute
+                                                                onChange={handleMenuChange}
                                                             >
-                                                                <option value="">None (Top-level Category)</option>
+                                                                <option value="">None</option>
                                                                 {renderMenuOptions(menuItems)}
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-xxl-6 col-md-6">
+                                                        <div>
+                                                            <label htmlFor="subMenu" className="form-label">
+                                                                Select Sub-category
+                                                            </label>
+                                                            <select
+                                                                className="form-select"
+                                                                id="subMenu"
+                                                                value={selectedSubMenu}
+                                                                name="subMenu" // Added the name attribute
+                                                                onChange={handleSubMenuChange}
+                                                                disabled={!subMenu.length}
+                                                            >
+                                                                <option value="">None</option>
+                                                                {subMenu.map((item) => (
+                                                                    <option key={item.id} value={item.id}>
+                                                                        {item.name}
+                                                                    </option>
+                                                                ))}
                                                             </select>
                                                         </div>
                                                     </div>
@@ -165,6 +225,7 @@ export default function Page() {
                                                                     type="file"
                                                                     className="form-control"
                                                                     accept="image/*"
+                                                                    name={`slider_image_${index}`} // Added the name attribute
                                                                     onChange={(e) => handleSliderImageChange(index, e)}
                                                                 />
                                                             </div>
@@ -175,15 +236,15 @@ export default function Page() {
                                                                 <Editor
                                                                     apiKey='gr80n553yg3m6esqpti35cl5sx7h53u7e342iozu7744k3qj'
                                                                     init={{
-                                                                        plugins: [
-                                                                            'link', 'image', 'media', 'table', 'lists'
-                                                                        ],
-                                                                        toolbar: 'undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | numlist bullist | link image media',
+                                                                        plugins: ['link', 'image', 'media', 'table', 'lists'],
+                                                                        toolbar:
+                                                                            'undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | numlist bullist | link image media',
                                                                     }}
                                                                     value={section.content}
-                                                                    onEditorChange={(value) => handleContentChange(index, value)}
+                                                                    onEditorChange={(value) =>
+                                                                        handleContentChange(index, value)
+                                                                    }
                                                                 />
-
                                                             </div>
 
                                                             {/* Multiple Image Upload */}
@@ -194,6 +255,7 @@ export default function Page() {
                                                                     className="form-control"
                                                                     accept="image/*"
                                                                     multiple
+                                                                    name={`service_images_${index}`} // Added the name attribute
                                                                     onChange={(e) => handleServiceImagesChange(index, e)}
                                                                 />
                                                             </div>
@@ -231,7 +293,6 @@ export default function Page() {
                                                     </div>
                                                 </div>
                                             </form>
-
                                         </div>
                                     </div>
                                 </div>
@@ -255,7 +316,6 @@ export default function Page() {
                     </div>
                 </footer>
             </div>
-
         </RootLayout>
     );
 }

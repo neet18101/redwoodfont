@@ -1,101 +1,78 @@
-import { NextResponse } from "next/server";
-import multer from "multer";
-import path from "path";
-import { promises as fs } from "fs";
-import { getConnection } from "@/utils/executeQuery";
-// Ensure that the uploads folder exists
-const uploadDir = path.join(process.cwd(), "public/assets/service_images");
+import { NextResponse } from 'next/server';
+import mysql from 'mysql2/promise'; // Use promise-based mysql2 for async/await
+import multer from 'multer';
+import path from 'path';
+import fs from 'fs';
+import { getConnection } from '@/utils/executeQuery';
 
-// Use multer to handle file uploads
+
+// Ensure that the content_images directory exists
+const contentImagesPath = path.join(process.cwd(), 'public', 'assets', 'content_images');
+if (!fs.existsSync(contentImagesPath)) {
+  fs.mkdirSync(contentImagesPath, { recursive: true });
+}
+
+// Multer configuration for file upload
 const storage = multer.diskStorage({
-  destination: async (req, file, cb) => {
-    // Create the folder if it doesn't exist
-    await fs.mkdir(uploadDir, { recursive: true });
-    cb(null, uploadDir);
+  destination: (req, file, cb) => {
+    cb(null, contentImagesPath); // Save files to the public/assets/content_images folder
   },
   filename: (req, file, cb) => {
-    // Save the file with a unique name (timestamp + original name)
-    cb(null, `${Date.now()}-${file.originalname}`);
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
+    cb(null, uniqueSuffix + path.extname(file.originalname)); // Generate unique file names
   },
 });
 
 const upload = multer({ storage });
 
-// Middleware for parsing multipart/form-data (for file uploads)
+// Disable Next.js built-in body parsing
 export const config = {
   api: {
-    bodyParser: false, // Disable Next.js's built-in body parsing so Multer can handle it
+    bodyParser: false,
   },
 };
 
-// File upload handler
+// Helper function to run Multer as a middleware in async/await style
+function runMiddleware(req, res, fn) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result) => {
+      if (result instanceof Error) {
+        return reject(result);
+      }
+      return resolve(result);
+    });
+  });
+}
+
+// POST API function to handle the form submission
 export async function POST(req) {
-  try {
-    // Use multer to handle form data, including files
-    const form = new Promise((resolve, reject) => {
-      upload.any()(req, {}, (err) => {
-        if (err) {
-          reject(err);
-        }
-        resolve(req);
-      });
-    });
+  const res = NextResponse;
 
-    // Wait for the form to be processed
-    await form;
+  // Use Multer to handle file uploads
+  await runMiddleware(req, res, upload.fields([
+    { name: 'slider_image', maxCount: 1 },
+    { name: 'images', maxCount: 10 }, // Allow multiple service images
+  ]));
 
-    // Collect uploaded file data (slider images and service images)
-    const sliderImages = [];
-    const serviceImages = [];
+  // Extract form fields from req.body and handle possible undefined values
+  const { menu_item_id, content, is_active } = req.body;
 
-    // Identify slider and service images
-    req.files.forEach((file) => {
-      if (file.fieldname.startsWith("sliderImage")) {
-        sliderImages.push(`/assets/service_images/${file.filename}`);
-      } else if (file.fieldname.startsWith("serviceImages")) {
-        serviceImages.push(`/assets/service_images/${file.filename}`);
-      }
-    });
+  const sliderImage = req.files?.slider_image?.[0]?.filename || null;
+  const images = req.files?.images?.map(file => file.filename) || [];
+  console.log(menu_item_id, content, sliderImage, images, is_active);
+  return NextResponse.json({ message: 'Content added successfully' }, { status: 200 });
 
-    // Extract fields from the form data
-    const { menu_name, parent_id } = req.body;
-    const contentSections = [];
+//   try {
+//     const pool = await getConnection();
+//     // Insert content data into the content table
+//     const [contentResult] = await pool.execute(
+//       `INSERT INTO content (menu_item_id, content, slider_image, images, is_active) VALUES (?, ?, ?, ?, ?)`,
+//       [menu_item_id, content, sliderImage, JSON.stringify(images), is_active ? 1 : 0]
+//     );
 
-    // Extract content sections from the body (assuming req.body contains content data)
-    Object.keys(req.body).forEach((key) => {
-      if (key.startsWith("content_")) {
-        contentSections.push(req.body[key]);
-      }
-    });
-
-    // Insert the data into your database
-    const dateTime = new Date().toISOString(); // Get the current date and time
-
-    const query = `
-      INSERT INTO menu_items (menu_name, parent_id, content, slider_image, images, is_active, date_time)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `;
-    const values = [
-      menu_name,
-      parent_id || null,
-      JSON.stringify(contentSections), // Save content sections as JSON
-      sliderImages.length > 0 ? sliderImages[0] : null, // Assuming you're storing one slider image for simplicity
-      JSON.stringify(serviceImages), // Save service images as JSON
-      true, // Assuming you want to mark the item as active by default
-      dateTime,
-    ];
-    const db = await getConnection();
-
-    // Execute the query
-    await db.query(query, values);
-
-    // Respond with success
-    return NextResponse.json({ message: "Menu item added successfully!" });
-  } catch (error) {
-    // Handle errors
-    return NextResponse.json(
-      { error: "File upload failed", details: error.message },
-      { status: 500 }
-    );
-  }
+//     return NextResponse.json({ message: 'Content added successfully', contentId: contentResult.insertId }, { status: 200 });
+//   } catch (error) {
+//     console.error('Error inserting into database:', error);
+//     return NextResponse.json({ error: 'Database error' }, { status: 500 });
+//   }
 }
