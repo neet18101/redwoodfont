@@ -5,9 +5,21 @@ import AdminHeader from "../../components_admin/AdminHeader";
 import Sidebar from "../../components_admin/Sidebar";
 import toast, { Toaster } from "react-hot-toast";
 
+// Utility function to generate slug from the menu name
+const slugify = (text) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+    .replace(/\-\-+/g, '-'); // Replace multiple - with single -
+};
+
 function Page() {
   const [menuItems, setMenuItems] = useState([]); // Fetch existing menu items for the dropdown
   const [menuName, setMenuName] = useState(""); // Store new menu name
+  const [menuUrl, setMenuUrl] = useState(""); // URL for the menu item
   const [selectedParent, setSelectedParent] = useState(""); // Parent menu id for subcategory
 
   // Define the function to fetch existing menu items for the Parent Menu dropdown
@@ -25,6 +37,7 @@ function Page() {
       setMenuItems(data); // Populate menu items for dropdown
     } catch (error) {
       console.error("Error fetching menu items:", error);
+      toast.error("Error fetching menu items");
     }
   };
 
@@ -33,12 +46,21 @@ function Page() {
     fetchMenuItems();
   }, []);
 
+  // Reflect slugified URL when menu name changes
+  const handleMenuNameChange = (event) => {
+    const name = event.target.value;
+    setMenuName(name);
+    // Auto-generate the URL slug
+    setMenuUrl(slugify(name));
+  };
+
   // Handle form submission for adding a new menu item
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const formData = {
-      menuName: menuName, // New menu item name
+      menuName, // New menu item name
+      menuUrl, // Use the slugified or manually provided URL
       parentMenuId: selectedParent || null, // If no parent is selected, it becomes a top-level category
     };
 
@@ -54,6 +76,7 @@ function Page() {
       if (response.ok) {
         toast.success("Menu item added successfully");
         setMenuName("");
+        setMenuUrl("");
         setSelectedParent("");
         // Fetch the updated list of menu items after successful addition
         fetchMenuItems();
@@ -118,8 +141,24 @@ function Page() {
                                 className="form-control"
                                 id="menuName"
                                 value={menuName}
-                                onChange={(e) => setMenuName(e.target.value)}
+                                onChange={handleMenuNameChange} // Reflect slug on menu name change
                                 required
+                              />
+                            </div>
+                          </div>
+
+                          {/* Menu URL Input */}
+                          <div className="col-xxl-6 col-md-6">
+                            <div>
+                              <label htmlFor="menuUrl" className="form-label">
+                                Menu URL (auto-generated from name, editable)
+                              </label>
+                              <input
+                                type="text"
+                                className="form-control"
+                                id="menuUrl"
+                                value={menuUrl}
+                                onChange={(e) => setMenuUrl(e.target.value)} // Allow manual editing of URL
                               />
                             </div>
                           </div>
@@ -141,7 +180,9 @@ function Page() {
                                   setSelectedParent(e.target.value)
                                 }
                               >
-                                <option value="">None (Top-level Category)</option>
+                                <option value="">
+                                  None (Top-level Category)
+                                </option>
                                 {renderMenuOptions(menuItems)}
                               </select>
                             </div>
